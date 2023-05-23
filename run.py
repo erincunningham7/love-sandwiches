@@ -22,7 +22,7 @@ def get_sales_data():
         print('Please enter sales data from the last market.')
         print('Example: 10, 20, 30, 40, 50, 60\n')
 
-        data_str = input('Enter your data here:\n')
+        data_str = input('Enter your data here: \n')
 
         sales_data = data_str.split(',')
 
@@ -33,7 +33,7 @@ def get_sales_data():
     return sales_data
 
 
-def validate_data():
+def validate_data(values):
     """
     Inside the try, convert all string values into integers. Raises ValueError if strings cannot be converted into int, or if there arent exactly six values.
     """
